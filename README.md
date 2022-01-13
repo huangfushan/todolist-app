@@ -265,7 +265,7 @@ $ s cli cicd github
 上述指令会在当前项目下生成 .github/workflows/serverless-devs.yml 文件，文件内容：
 
 ```yaml
-name: Serverless Devs Project CI/CD
+name: Serverless Devs Project CI/CDw
 
 on:
   push:
@@ -278,7 +278,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 12w
           registry-url: https://registry.npmjs.org/
       - run: npm install
       - run: npm install -g @serverless-devs/s
